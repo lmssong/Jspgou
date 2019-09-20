@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JspGou Administrator's Control Panel</title>
+    <script>
+      (function (window) {
+        var theUA = window.navigator.userAgent.toLowerCase();
+        if ((theUA.match(/msie\s\d+/) && theUA.match(/msie\s\d+/)[0]) || (theUA.match(/trident\s?\d+/) && theUA.match(/trident\s?\d+/)[0])) {
+          var ieVersion = theUA.match(/msie\s\d+/)[0].match(/\d+/)[0] || theUA.match(/trident\s?\d+/)[0];
+          if (ieVersion < 9) {
+            window.location.href = "info/version.html"
+          };
+        }
+      })(window);
+
+    </script>
+  </head>
+  <body style=" position: inherit">
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
